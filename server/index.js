@@ -13,7 +13,7 @@ const configuration = new Configuration({
 });
 const openai = new OpenAIApi(configuration);
 
-const port = 8000;
+const port = process.env.PORT || 8000;
 // app.use(
 //   session({
 //     secret: "thisismysecrctekeyfhrgfgrfrty84fwir767",
